@@ -1,0 +1,204 @@
+#contentArea{
+	width:960px;
+	margin:0px auto;
+	overflow:auto;
+}
+
+#contentLeftArea{
+	width:640px;
+	float:left;
+	overflow:auto;
+}
+
+#newsTitleListArea{
+	overflow:auto;
+	padding:36px 32px 16px 32px;
+	background-color:rgba(0,0,0,0.20);
+}
+
+#newsTitleListArea::before{
+	content:"";
+	position:absolute;
+	background-color:rgba(0,0,0,0.25);
+	height:4px;
+	left:0px;
+	top:0px;
+	right:0px;
+}
+
+#newsTitleListArea .newsTitle{
+	position:relative;
+	display:block;
+	margin-bottom:16px;
+	padding-left:16px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+#newsTitleListArea .newsTitle::before{
+	content:"";
+	position:absolute;
+	top:4px;
+	left:0px;
+	height:12px;
+	width:4px;
+	background-image:url(../media/markBg.png);
+	background-repeat:repeat;
+}
+
+#newsTitleListArea .newsTitle:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#pageInfoArea{
+	margin-top:4px;
+	padding: 16px 0px 16px 0px;
+	background-color: rgba(0,0,0,0.2);
+	overflow: auto;
+	font-size:12px;
+	text-align:center;
+}
+#gotoFirstPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoFirstPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#gotoPrevPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+}
+
+#gotoPrevPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#currentPageInput{
+	position:relative;
+	height:16px;
+	padding:8px;
+	border:0px none;
+	margin:0px 0px 0px 16px;
+	width:32px;
+	text-align:right;
+	background-color:rgba(0,0,0,0.4);
+	font-size:12px;
+	color:#b2b2b2;
+	box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px 0px, rgba(255,255,255,0.1) 1px 1px 0px 0px;	
+}
+
+#currentPageInput:focus{
+	background-color:rgba(0,0,0,0.7);
+}
+
+#totalPage{
+	padding:8px 0px;
+	margin:0px 16px 0px 0px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoNextPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+}
+
+#gotoNextPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#gotoLastPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoLastPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#contentRightArea{
+	float:right;
+	overflow:auto;
+	width:288px;
+}
+
+#rightSideAdArea{
+	float:right;
+	width:288px;
+	overflow:auto;
+}
+
+#rightSideAdArea .adWrapper{
+	position:relative;
+	display:block;
+	padding:16px;
+	background-color:rgba(0,0,0,0.2);
+	margin-bottom:32px;
+}
+
+#rightSideAdArea .adWrapper:last-child{
+	margin-bottom:0px;
+}
+
+#rightSideAdArea .adWrapper:hover{
+	background-color:rgba(0,0,0,0.6);
+}
+
+#rightSideAdArea .adWrapper::after{
+	content:"";
+	position:absolute;
+	left:16px;
+	top:16px;
+	right:16px;
+	bottom:16px;
+	border:0px solid rgba(255,255,0,1);
+	transition:width 0.2s, height 0.2s, border 0.2s;
+}
+
+#rightSideAdArea .adWrapper:hover::after{
+	border:4px solid rgba(255,255,0,1);
+	transition:border 0.2s;
+}
+
+#rightSideAdArea .adImage{
+	position:relative;
+	display:block;
+	width:256px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

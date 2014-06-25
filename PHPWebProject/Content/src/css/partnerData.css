@@ -1,0 +1,141 @@
+#contentArea{
+	overflow:auto;
+	margin:0px auto;
+	width:960px;
+}
+
+#partnerInfo{
+	background-color:rgba(0,0,0,0.2);
+	padding:20px 16px 16px 16px;
+	overflow:auto;
+}
+
+#partnerInfo::before{
+	content:"";
+	position:absolute;
+	height:4px;
+	top:0px;
+	left:0px;
+	right:0px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#changePasswordLink{
+	text-decoration:underline;
+}
+
+#changePasswordLink:hover{
+	color:#ff0;
+}
+
+#partnerImageSaleTitleArea{
+	overflow:auto;
+	margin-top:8px;
+}
+
+#imageSaleTimeTitle{
+	color:#bfaf00;
+	float:left;
+	padding:16px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#imageSaleCodeTitle{
+	color:#bfaf00;
+	float:left;
+	padding:16px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#imageSaleIncomeTitle{
+	color:#bfaf00;
+	float:left;
+	padding:16px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#imageSaleLinkTitle{
+	color:#bfaf00;
+	float:right;
+	padding:16px 0px;
+	text-align:center;
+	width:117px;
+	background-color:rgba(0,0,0,0.2);	
+}
+
+#partnerImageSaleInfo{
+	margin-top:1px;
+	min-height:360px;
+}
+
+#partnerImageSaleInfo .imageSaleItem{
+	margin-bottom:1px;
+	overflow:auto;
+	font-size:12px;
+}
+
+#partnerImageSaleInfo .imageSaleItem .imageSaleTime{
+	float:left;
+	padding:12px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#partnerImageSaleInfo .imageSaleItem .imageSaleCode{
+	float:left;
+	padding:12px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#partnerImageSaleInfo .imageSaleItem .imageSaleIncome{
+	float:left;
+	padding:12px 0px;
+	text-align:center;
+	width:280px;
+	margin-right:1px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#partnerImageSaleInfo .imageSaleItem .imageSaleLink{
+	float:right;
+	padding:12px 0px;
+	text-align:center;
+	width:117px;
+	background-color:rgba(0,0,0,0.2);
+	text-decoration:underline;
+}
+
+#partnerImageSaleInfo .imageSaleItem .imageSaleLink:hover{
+	color:#ff0;	
+}
+
+
+#partnerImageSaleInfo .imageSaleItem:hover .imageSaleTime{
+	background-color:rgba(0,0,0,0.4);
+}
+
+#partnerImageSaleInfo .imageSaleItem:hover .imageSaleCode{
+	background-color:rgba(0,0,0,0.4);
+}
+
+#partnerImageSaleInfo .imageSaleItem:hover .imageSaleIncome{
+	background-color:rgba(0,0,0,0.4);
+}
+
+#partnerImageSaleInfo .imageSaleItem:hover .imageSaleLink{
+	background-color:rgba(0,0,0,0.4);
+}

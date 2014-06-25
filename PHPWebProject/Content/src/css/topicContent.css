@@ -1,0 +1,255 @@
+#contentArea{
+	margin:0px auto;
+	width:960px;
+	overflow:auto;
+}
+
+#contentLeftArea{
+	float:left;
+	width:240px;
+	overflow:auto;
+}
+
+#topicCoverImageWrapper{
+	width:240px;
+	height:236px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#topicCoverImageWrapper::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	height: 4px;
+	background-color: rgba(0,0,0,0.25);
+}
+
+#topicCoverImage{
+	position:absolute;
+	width:208px;
+	height:208px;
+	left:16px;
+	top:20px;
+}
+
+#topicTitle{
+	padding:8px 16px 16px 16px;
+	background-color:rgba(0,0,0,0.2);
+	color:#bfaf00;
+	font-weight:bold;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+
+#topicBrief{
+	margin-top:1px;
+	padding:16px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#contentRightArea{
+	float:right;
+	width:688px;
+	overflow:auto;
+}
+
+#topicImageArea{
+	padding: 36px 8px 8px 32px;
+	background-color: rgba(0,0,0,0.2);
+	overflow: auto;
+}
+
+#topicImageArea::before{
+	content: "";
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 4px;
+	background-color: rgba(0,0,0,0.25);
+}
+
+#topicImageArea .topicImageItem{
+	position:relative;
+	display:block;
+	float:left;
+	width:192px;
+	margin-right:24px;
+	margin-bottom:24px;
+}
+
+#topicImageArea .topicImageItem .topicImageImageWrapper{
+	height:192px;
+	background-color:rgba(0,0,0,0.4);	
+}
+
+#topicImageArea .topicImageItem:hover .topicImageImageWrapper{
+	background-color:rgba(0,0,0,0.6);	
+}
+
+#topicImageArea .topicImageItem .topicImageImageWrapper::after{
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	right:8px;
+	bottom:8px;
+	border: 0px solid rgba(255,255,0,1);
+	transition: border 0.2s;
+}
+
+#topicImageArea .topicImageItem:hover .topicImageImageWrapper::after{
+	border: 4px solid rgba(255,255,0,1);
+}
+
+#topicImageArea .topicImageItem .topicImageImage{
+	position:absolute;
+	left:8px;
+	top:8px;
+	right:8px;
+	bottom:8px;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:contain;	
+}
+
+#topicImageArea .topicImageItem .topicImageInfoWrapper{
+	height:104px;
+	padding:16px 16px 0px 16px;
+	background-color:rgba(0,0,0,0.2);
+}
+
+#topicImageArea .topicImageItem:hover .topicImageInfoWrapper{
+	background-color:rgba(0,0,0,0.4);
+}
+
+#topicImageArea .topicImageItem .topicImageInfoTitle{
+	color:#bfaf00;
+	font-size:12px;
+	font-weight:bold;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	margin-bottom:8px;
+}
+
+#topicImageArea .topicImageItem:hover .topicImageInfoTitle{
+	color:#ff0;
+}
+
+#topicImageArea .topicImageItem .topicImageInfoOther{
+	margin-bottom:2px;
+	font-size:12px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+#topicImageArea .topicImageItem .markText{
+	color:#666666;
+}
+
+#topicImageArea .topicImageItem:hover .markText{
+	color:#b2b2b2;
+}
+
+#topicImageArea .topicImageItem .contentText{
+	color:#b2b2b2;
+}
+
+#topicImageArea .topicImageItem:hover .contentText{
+	color:#fff;
+}
+
+
+#topicImagePageInfoArea{
+	margin-top:4px;
+	padding: 16px 0px 16px 0px;
+	background-color: rgba(0,0,0,0.2);
+	overflow: auto;
+	font-size:12px;
+	text-align:center;
+}
+
+#gotoFirstPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoFirstPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#gotoPrevPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+}
+
+#gotoPrevPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#currentPageInput{
+	position:relative;
+	height:16px;
+	padding:8px;
+	border:0px none;
+	margin:0px 0px 0px 16px;
+	width:32px;
+	text-align:right;
+	background-color:rgba(0,0,0,0.4);
+	font-size:12px;
+	color:#b2b2b2;
+	box-shadow:inset rgba(0,0,0,0.5) 1px 1px 2px 0px, rgba(255,255,255,0.1) 1px 1px 0px 0px;	
+}
+
+#currentPageInput:focus{
+	background-color:rgba(0,0,0,0.7);
+}
+
+#totalPage{
+	padding:8px 0px;
+	margin:0px 16px 0px 0px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoNextPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+}
+
+#gotoNextPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+#gotoLastPage{
+	padding:8px 0px;
+	margin:0px 16px;
+	display:inline-block;
+	color:#666666;
+}
+
+#gotoLastPage:hover{
+	color:#ff0;
+	text-decoration:underline;
+}
+
+
+
+
+
+
+
+
+
